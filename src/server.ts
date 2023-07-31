@@ -49,7 +49,7 @@ const server = async () => {
       cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 7,
         httpOnly: true,
-        sameSite: false, // Set to 'none' before deploying
+        sameSite: 'none', // Set to 'none' before deploying and set to false when developing
         secure: PRODUCTION,
       },
     })
